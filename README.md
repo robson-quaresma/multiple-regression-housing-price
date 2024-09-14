@@ -5,13 +5,13 @@
 - Dentre os conceitos que serão abordados, estão:
     * Análise exploratória dos dados;
     * Criação do modelo;
-    * Análise da significância estatística das variáveis independentes;
-    * Problemas de Multicolinearidade;
-    * Probelmas de Heterocedasticidade;
+    * Análise da significância estatística das variáveis independentes (f test, t test);
+    * Problemas de Multicolinearidade (VIF e Tolerance);
+    * Probelmas de Heterocedasticidade (Breusch-Pagan e Goldfeld-Quandt);
     * Stepwise;
-    * Shapiro Francia para verificar a aderência dos resíduos à normalidade;
-    * Box-Cox, para transformação da variável dependente, caso os resíduos não tenham aderência à normalidade;
-    * Seleção do melhor modelo;
+    * Verificar a aderência dos resíduos à normalidade (Shapiro Fracia);
+    * Transformação da variável dependente (Box-Cox), caso os resíduos não tenham aderência à normalidade;
+    * Comparação e seleção do melhor modelo (R2, R2 ajustado, EQM, RMSE);
 
 ## Resultado
 - Obter o melhor modelo e criar um deploy em cloud para testes.
