@@ -15,4 +15,4 @@ COPY main.py /code/app
 COPY model.pkl /code/app
 
 #
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
+CMD ["uvicorn", "code:app", "--host", "0.0.0.0", "--port", "80"]
