@@ -20,7 +20,7 @@
 
 ## Instalação
 Certifique-se de ter o python instalado em sua máquina.
-Após clonar este repositório, se você quiser alterar o código, criar seu ambiente virtual ou apenas mover para a seção Running:
+Após clonar este repositório, se você quiser alterar o código, criar seu ambiente virtual ou apenas siga os passos de como rodar o projeto:
 ```
 python -m venv environment_name
 ```
