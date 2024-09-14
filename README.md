@@ -56,6 +56,8 @@ docker run -d --name container_name -p 80:80 image_name
 ## Deployment no Render:
 [Link](https://housing-price-serc.onrender.com/predict)
 
+URI: https://housing-price-serc.onrender.com/predict
+
 Utilizar o método POST
 ### JSON:
 ```
