@@ -1,11 +1,17 @@
-# multiple-regression-housing-price
-The objective of this repository is to try to practice some concepts learned at USP-Esalq related to multiple regression:
-- Data exploration;
-- Analyze whether there is at least one statistically significant beta among the independent variables (f test);
-- If the f test returns that among all betas, there is at least one significant, evaluate which betas are statistically significant (t test);
-- Evaluate whether the functional form of the model is correct for the significances indicated;
-- Evaluate the adherence of the residues to normality;
-- Apply, if necessary, normalization through the Box-Cox method;
-- Evaluate whether there is multicollinearity;
-- Evaluate whether there is Heteroscedasticity;
-- Arrive at the best R2;
+# Objetivo
+- O objetivo deste estudo é colocar em prática os conceitos aprendidos no MBA Data Science & Analytics da USP/Esalq relacionados a Regressão Linear. Para isso foi escolhido um problema de Regressão Linear Múltipla, disponível na plataforma Kaggle.
+
+## Conceitos 
+- Dentre os conceitos que serão abordados, estão:
+    * Análise exploratória dos dados;
+    * Criação do modelo;
+    * Análise da significância estatística das variáveis independentes;
+    * Problemas de Multicolinearidade;
+    * Probelmas de Heterocedasticidade;
+    * Stepwise;
+    * Shapiro Francia para verificar a aderência dos resíduos à normalidade;
+    * Box-Cox, para transformação da variável dependente, caso os resíduos não tenham aderência à normalidade;
+    * Seleção do melhor modelo;
+
+## Resultado
+- Obter o melhor modelo e criar um deploy em cloud para testes.
