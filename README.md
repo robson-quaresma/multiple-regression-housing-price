@@ -41,7 +41,7 @@ pip install -r requirements.txt
 ```
 ### Rodando o projeto com uvicorn:
 ```
-uvicorn app.main:app --reload
+uvicorn main:app --reload
 ```
 ### Rodando o projeto com Docker
 Criando a imagem do Docker
