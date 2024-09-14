@@ -15,3 +15,63 @@
 
 ## Resultado
 - Obter o melhor modelo e criar um deploy em cloud para testes.
+
+# Rodar o modelo localmente
+
+## Instalação
+Certifique-se de ter o python instalado em sua máquina.
+Após clonar este repositório, se você quiser alterar o código, criar seu ambiente virtual ou apenas mover para a seção Running:
+```
+python -m venv environment_name
+```
+Ativação:
+__Windows__:
+```
+environment_name\\Scripts\\activate
+```
+__MacOS or Linux__:
+```
+source environment_name/bin/activate
+```
+
+## Rodando o projeto
+Instalar as dependências:
+```
+pip install -r requirements.txt
+```
+### Rodando o projeto com uvicorn:
+```
+uvicorn app.main:app --reload
+```
+### Rodando o projeto com Docker
+Criando a imagem do Docker
+```
+docker build -t image_name .
+```
+Rodando a imagem criada:
+```
+docker run -d --name container_name -p 80:80 image_name
+```
+
+## Deployment no Render:
+[Link](https://housing-price-serc.onrender.com/predict)
+
+Utilizar o método POST
+### JSON:
+```
+{
+    "taxa_crime_p_cidade": 0.00632,
+    "proporcao_terreno_zoneados": 18.0,
+    "proporcao_negocios_p_cidade": 2.31,
+    "rio_charles": 1,
+    "concentracao_oxidos_nitricos": 0.469,
+    "numero_medio_comodos": 7.147,
+    "proporcao_proprietarios_casas_1940": 78.9,
+    "distancia_centro_empresarial": 4.0900,
+    "indice_accessibilidade_rodovias": 3,
+    "taxa_imposto": 273.0,
+    "proporcao_alunos_x_professor_p_cidade": 18.7,
+    "proporcao_comunidade_negra_p_cidade": 394.63,
+    "proporcao_pobreza": 9.67
+}
+```
