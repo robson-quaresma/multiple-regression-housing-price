@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 import pickle
 import pandas as pd
 
@@ -11,7 +12,16 @@ def boxcox_revert(fittedvalue):
 with open('model.pkl', 'rb') as f:
     model = pickle.load(f)
 
+
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  
+    allow_credentials=True,
+    allow_methods=["*"], 
+    allow_headers=["*"],
+)
 
 @app.post("/predict")
 def predict(data: dict):
