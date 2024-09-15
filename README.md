@@ -61,6 +61,8 @@ docker run -d --name container_name -p 80:80 image_name
 
 URI: https://housing-price-serc.onrender.com/predict
 
+Frontend: https://housing-price-frontend.onrender.com
+
 Utilizar o método POST
 ### JSON:
 ```
