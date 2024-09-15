@@ -44,7 +44,7 @@ pip install -r requirements.txt
 ```
 ### Rodando o projeto com uvicorn:
 ```
-uvicorn app.main:app --reload
+uvicorn main:app --reload
 ```
 ### Rodando o projeto com Docker
 Criando a imagem do Docker
@@ -58,6 +58,8 @@ docker run -d --name container_name -p 80:80 image_name
 
 ## Deployment no Render:
 [Link](https://housing-price-serc.onrender.com/predict)
+
+URI: https://housing-price-serc.onrender.com/predict
 
 Utilizar o método POST
 ### JSON:
