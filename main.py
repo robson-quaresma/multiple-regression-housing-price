@@ -18,5 +18,6 @@ def predict(data: dict):
     df = pd.DataFrame(data, index=[0])
 
     prediction = model.predict(df)
+    result = boxcox_revert(prediction[0]) * 1000
 
-    return {'prediction': boxcox_revert(prediction[0])}
+    return {'prediction': result}
