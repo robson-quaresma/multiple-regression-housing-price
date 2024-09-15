@@ -16,6 +16,11 @@
 ## Resultado esperado
 - Obter o melhor modelo e criar um deploy em cloud para testes.
 
+## Observações
+- O resultado da previsão pode não respeitar a interpolação em que o modelo foi treinado;
+- O formulário do frontend, para consumo do modelo, não possui travas para interpolação;
+- O deploy do Frontend e Backend foram feitos no Render;
+
 <br /><br />
 # Tutorial para rodar o projeto localmente
 
@@ -42,7 +47,7 @@ Instalar as dependências:
 ```
 pip install -r requirements.txt
 ```
-### Rodando o projeto com uvicorn:
+### Rodando o projeto com uvicorn
 ```
 uvicorn main:app --reload
 ```
@@ -56,15 +61,16 @@ Rodando a imagem criada:
 docker run -d --name container_name -p 80:80 image_name
 ```
 
-## Deployment no Render:
-[Link](https://housing-price-serc.onrender.com/predict)
+## URIs
+Backend: https://housing-price-serc.onrender.com/predict<br />
+Frontend: https://housing-price-frontend.onrender.com<br /><br />
 
-URI: https://housing-price-serc.onrender.com/predict
-
-Frontend: https://housing-price-frontend.onrender.com
+## Repositórios
+Frontend: [Link](https://github.com/robson-quaresma/housing-price-frontend)<br />
+Jupyter Notebook do modelo: [Link](https://github.com/robson-quaresma/multiple-regression-housing-price/blob/main/jupyter-notebook/boston_housing_price.ipynb)
 
 Utilizar o método POST
-### JSON:
+### JSON
 ```
 {
     "taxa_crime_p_cidade": 0.00632,
