@@ -2,6 +2,11 @@ from fastapi import FastAPI
 import pickle
 import pandas as pd
 
+# Lambda extraído do modelo
+lmbda = 0.21662090066621686
+
+def boxcox_revert(fittedvalue):
+    return (fittedvalue * lmbda + 1) ** (1 / lmbda)
 
 with open('model.pkl', 'rb') as f:
     model = pickle.load(f)
@@ -14,4 +19,4 @@ def predict(data: dict):
 
     prediction = model.predict(df)
 
-    return {'prediction': prediction[0]}
+    return {'prediction': boxcox_revert(prediction[0])}
