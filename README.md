@@ -16,6 +16,10 @@
 ## Resultado esperado
 - Obter o melhor modelo e criar um deploy em cloud para testes.
 
+## Observações
+- O resultado da previsão pode não respeitar a interpolação em que o modelo foi treinado;
+- O formulário do frontend, para consumo do modelo, não possui travas para interpolação;
+
 <br /><br />
 # Tutorial para rodar o projeto localmente
 
