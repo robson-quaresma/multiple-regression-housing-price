@@ -19,5 +19,6 @@ def predict(data: dict):
 
     prediction = model.predict(df)
     result = boxcox_revert(prediction[0]) * 1000
+    result = round(result, 2)
 
     return {'prediction': result}
