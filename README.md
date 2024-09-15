@@ -13,14 +13,17 @@
     * Transformação da variável dependente (Box-Cox), caso os resíduos não tenham aderência à normalidade;
     * Comparação e seleção do melhor modelo (R2, R2 ajustado, EQM, RMSE);
 
-## Resultado
+## Resultado esperado
 - Obter o melhor modelo e criar um deploy em cloud para testes.
 
-# Rodar o modelo localmente
+<br /><br />
+# Tutorial para rodar o projeto localmente
+
+
 
 ## Instalação
-Certifique-se de ter o python instalado em sua máquina.
-Após clonar este repositório, se você quiser alterar o código, criar seu ambiente virtual ou apenas mover para a seção Running:
+Certifique-se de ter o python instalado na sua máquina.
+Após clonar este repositório, se você quiser alterar o código, você pode criar um ambiente virtual ou apenas siga para sessão de como rodar o projeto:
 ```
 python -m venv environment_name
 ```
